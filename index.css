@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "kiona";
+    src: url(/font/Kiona-Regular.ttf) format("truetype");
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --font1: "kiona";
+}
+body{
+    background-image: linear-gradient(-45deg, #008374, #79a331);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+form{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    box-shadow:
+    2.8px 2px 2.2px rgba(0, 0, 0, 0.016),
+    6.7px 10.5px 5.3px rgba(0, 0, 0, 0.03),
+    12.5px 18.5px 10px rgba(0, 0, 0, 0.043),
+    22.3px 38.4px 17.9px rgba(0, 0, 0, 0.055),
+    41.8px 74.8px 33.4px rgba(0, 0, 0, 0.07),
+    100px 122px 80px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 12px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Config dentro do formulario*/
+h1{
+    background-image: linear-gradient(-45deg, #008374, #79a331);
+    border-radius: 9px 9px 0px 0px;
+    padding: 10%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: var(--font1);
+
+}
+
+label{
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--font1);
+}
+input{
+    width: 250px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid #27262685;
+    display: block;
+    margin: auto;
+
+    font-family: var(--font1);
+    font-weight: 800;
+    box-shadow:  0px 5px 3px #00000017;
+    
+}
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+.inf{
+    width: 250px;
+    height: 35px;
+    border-radius: 4px;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #00000052;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.inf:valid{
+    border:  1px solid yellowgreen;
+}
+.inf:invalid{
+    border: 1px solid red;
+    animation: shake 300ms;
+
+}
+.inf::placeholder{
+    font-weight: 800;
+    font-variant: small-caps;
+    color: black;
+
+}
+#btn{
+    border-radius: 4px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #79a331;
+    box-shadow:  0px 5px 5px #00000044;
+    width: 256px;
+}
+#btn:hover{
+    background-color: #008374;
+    box-shadow:  0px 5px 5px #00000044;
+    transition: 0.5s;
+    color: white;
+    animation: shake 300ms;
+}
