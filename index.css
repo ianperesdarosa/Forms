@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: "kiona";
-    src: url(/font/Kiona-Regular.ttf) format("truetype");
+    src: url(/Font/Kiona-Regular.ttf) format("truetype");
 }
 *{
     padding: 0px;
